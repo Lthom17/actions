@@ -1,5 +1,10 @@
 name: CI
-on: pull_request
+on: 
+  pull_request:
+    branches: [develop2]
+  push: 
+    branches: [develop2]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,3 +19,4 @@ jobs:
       - run: npm test -- --coverage
         env:
           CI: true
+        if: 
