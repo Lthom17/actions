@@ -6,7 +6,7 @@ jobs:
   create_issue:
     runs-on: ubuntu-latest
     permissions:
-      issues: write 
+      issues: write
       contents: write
     steps:
       - name: push a random file
@@ -39,5 +39,3 @@ jobs:
             "body": "This issue was automatically created by the GitHub Action workflow **${{ github.workflow }}**. \n\n The commit hash was: _${{ github.sha }}_."
             }' \
           --fail
-
-  
