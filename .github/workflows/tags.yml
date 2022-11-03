@@ -1,0 +1,14 @@
+name: Run on tag
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          - echo "Hello  World"
+          - echo "Tagged"
