@@ -2,7 +2,6 @@ name: ENV Variables
 on: push
 env:
   WF_ENV: "All have access"
-
 jobs:
   create_issue:
     runs-on: ubuntu-latest
