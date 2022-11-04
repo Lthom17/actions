@@ -11,9 +11,8 @@ jobs:
 
     steps:
      
-
       - name: Create tag
-        uses: ./.github/actions/tag
+        uses: ./actions/tag
         with:
           version: "FIVE"
           message: "practice tagging"
