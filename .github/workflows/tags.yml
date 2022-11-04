@@ -7,9 +7,11 @@ on:
 
 jobs:
   create-tag:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
+
     steps:
-      - run: echo "Hello  World"
+      - name: Checkout
+        uses: actions/checkout@v2
 
       - name: Create tag
         uses: ./.github/actions/tag.yml
