@@ -4,16 +4,15 @@ on:
   push:
     tags:
       - "v*"
-  
+
 jobs:
   create-tag:
     runs-on: ubuntu-latest
     steps:
-      -  run: echo "Hello  World"
-        
+      - run: echo "Hello  World"
+
       - name: Create tag
         uses: ./.github/actions/tag.yml
         with:
           version: "FIVE"
           message: "practice tagging"
-          
