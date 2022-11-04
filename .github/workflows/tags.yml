@@ -13,8 +13,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - run: ls
+
       - name: Create tag
-        uses: ./.github/actions/tag@v7
+        uses: ./.github/actions/tag
         with:
           version: "FIVE"
           message: "practice tagging"
