@@ -14,6 +14,6 @@ jobs:
       - name: Create tag
         uses: ./.github/actions/tag.yml
         with:
-          version: "vFIVE"
+          version: "FIVE"
           message: "practice tagging"
           
